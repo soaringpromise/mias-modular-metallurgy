@@ -1,9 +1,8 @@
 package net.soaringpromise.mmm;
 
 import net.fabricmc.api.ModInitializer;
-
 import net.minecraft.resources.Identifier;
-
+import net.soaringpromise.mmm.registry.ModConfigs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +13,7 @@ public class Mmm implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModConfigs.init();
 
 		LOGGER.info("{} successfully initialized.", MOD_NAME);
 	}
