@@ -7,16 +7,15 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.soaringpromise.mmm.Mmm;
-import net.soaringpromise.mmm.registry.ModArmor;
-import net.soaringpromise.mmm.registry.ModBlocks;
-import net.soaringpromise.mmm.registry.ModItems;
-import net.soaringpromise.mmm.registry.ModTools;
+import net.soaringpromise.mmm.registry.*;
 import org.jspecify.annotations.NonNull;
 
 import java.util.List;
@@ -225,7 +224,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         "steel_ingot"
                 );
 
-                // Renewable Calcite: Pointed Dripstone + Bone Meal
                 shaped(RecipeCategory.BUILDING_BLOCKS, Items.CALCITE, 2)
                         .pattern("DB")
                         .pattern("BD")
@@ -236,6 +234,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                                 has(Items.POINTED_DRIPSTONE)
                         )
                         .save(exporter, ResourceKey.create(Registries.RECIPE, Mmm.id("calcite_from_dripstone")));
+
+                recyclingRecipes(ModTags.Items.RECYCLABLE_IRON, Items.IRON_INGOT,
+                        "minecraft:iron_nugget_from_smelting",
+                        "minecraft:iron_nugget_from_blasting");
+
+                recyclingRecipes(ModTags.Items.RECYCLABLE_GOLD, Items.GOLD_INGOT,
+                        "minecraft:gold_nugget_from_smelting",
+                        "minecraft:gold_nugget_from_blasting");
+
+                recyclingRecipes(ModTags.Items.RECYCLABLE_COPPER, Items.COPPER_INGOT,
+                        "minecraft:copper_nugget_from_smelting",
+                        "minecraft:copper_nugget_from_blasting");
+
+                recyclingRecipes(ModTags.Items.RECYCLABLE_SILVER, ModItems.SILVER_INGOT,
+                        "modular-metallurgy:silver_ingot_from_recycling_smelting",
+                        "modular-metallurgy:silver_ingot_from_recycling_blasting");
+
+                recyclingRecipes(ModTags.Items.RECYCLABLE_STEEL, ModItems.STEEL_INGOT,
+                        "modular-metallurgy:steel_ingot_from_recycling_smelting",
+                        "modular-metallurgy:steel_ingot_from_recycling_blasting");
+
+                recyclingRecipes(ModTags.Items.RECYCLABLE_LEAD, ModItems.LEAD_INGOT,
+                        "modular-metallurgy:lead_ingot_from_recycling_smelting",
+                        "modular-metallurgy:lead_ingot_from_recycling_blasting");
             }
 
             private void toolRecipes(Item ingot, Item sword, Item pickaxe, Item axe, Item shovel, Item hoe, Item spear) {
@@ -324,6 +346,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('M', ingot)
                         .unlockedBy(getHasName(ingot), has(ingot))
                         .save(exporter);
+            }
+
+
+            private void recyclingRecipes(TagKey<Item> inputs, Item result, String smeltingId, String blastingId) {
+                SimpleCookingRecipeBuilder.smelting(
+                                tag(inputs),
+                                RecipeCategory.MISC,
+                                CookingBookCategory.MISC,
+                                result,
+                                0.1f,
+                                200
+                        )
+                        .unlockedBy("has_recyclable_equipment", has(inputs))
+                        .save(exporter, smeltingId);
+
+                SimpleCookingRecipeBuilder.blasting(
+                                tag(inputs),
+                                RecipeCategory.MISC,
+                                CookingBookCategory.MISC,
+                                result,
+                                0.1f,
+                                100
+                        )
+                        .unlockedBy("has_recyclable_equipment", has(inputs))
+                        .save(exporter, blastingId);
             }
 
             private void nautilusArmorUpgrade(Item base, Item ingot, Item result) {

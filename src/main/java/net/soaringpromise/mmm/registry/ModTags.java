@@ -27,6 +27,25 @@ public final class ModTags {
         public static final TagKey<Item> STEEL_REPAIRABLES = createTag("steel_repairables");
         public static final TagKey<Item> LEAD_REPAIRABLES = createTag("lead_repairables");
 
+        public static final TagKey<Item> RECYCLABLE_IRON =
+                TagKey.create(Registries.ITEM, Mmm.id("recyclable/iron"));
+
+        public static final TagKey<Item> RECYCLABLE_GOLD =
+                TagKey.create(Registries.ITEM, Mmm.id("recyclable/gold"));
+
+        public static final TagKey<Item> RECYCLABLE_COPPER =
+                TagKey.create(Registries.ITEM, Mmm.id("recyclable/copper"));
+
+        public static final TagKey<Item> RECYCLABLE_SILVER =
+                TagKey.create(Registries.ITEM, Mmm.id("recyclable/silver"));
+
+        public static final TagKey<Item> RECYCLABLE_STEEL =
+                TagKey.create(Registries.ITEM, Mmm.id("recyclable/steel"));
+
+        public static final TagKey<Item> RECYCLABLE_LEAD =
+                TagKey.create(Registries.ITEM, Mmm.id("recyclable/lead"));
+
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.create(Registries.ITEM, Mmm.id(name));
         }
