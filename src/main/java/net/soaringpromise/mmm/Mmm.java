@@ -20,9 +20,12 @@ public class Mmm implements ModInitializer {
 		ModItems.register();
 		ModBlocks.register();
 		ModTools.register();
+		ModArmor.register();
 		ModCreativeTabs.register();
 
 		ModEntities.register();
+		ModLootTables.register();
+
 		DispenserBlock.registerProjectileBehavior(ModItems.SILVER_ARROW);
 
 		ModWorldGen.init();

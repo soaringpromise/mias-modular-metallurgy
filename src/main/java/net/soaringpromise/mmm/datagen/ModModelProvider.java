@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.soaringpromise.mmm.registry.ModArmor;
 import net.soaringpromise.mmm.registry.ModBlocks;
 import net.soaringpromise.mmm.registry.ModItems;
 import net.soaringpromise.mmm.registry.ModTools;
@@ -65,5 +66,26 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModTools.LEAD_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModTools.LEAD_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateSpear(ModTools.LEAD_SPEAR);
+
+        itemModelGenerators.generateFlatItem(ModArmor.SILVER_HELMET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.SILVER_CHESTPLATE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.SILVER_LEGGINGS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.SILVER_BOOTS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.SILVER_HORSE_ARMOR, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.SILVER_NAUTILUS_ARMOR, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModArmor.STEEL_HELMET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.STEEL_CHESTPLATE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.STEEL_LEGGINGS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.STEEL_BOOTS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.STEEL_HORSE_ARMOR, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.STEEL_NAUTILUS_ARMOR, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModArmor.LEAD_HELMET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.LEAD_CHESTPLATE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.LEAD_LEGGINGS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.LEAD_BOOTS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.LEAD_HORSE_ARMOR, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModArmor.LEAD_NAUTILUS_ARMOR, ModelTemplates.FLAT_ITEM);
     }
 }

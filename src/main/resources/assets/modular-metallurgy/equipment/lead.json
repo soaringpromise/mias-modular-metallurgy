@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "modular-metallurgy:lead"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "modular-metallurgy:lead"
+      }
+    ],
+    "horse_body": [
+      {
+        "texture": "modular-metallurgy:lead"
+      }
+    ],
+    "nautilus_body": [
+      {
+        "texture": "modular-metallurgy:lead"
+      }
+    ]
+  }
+}

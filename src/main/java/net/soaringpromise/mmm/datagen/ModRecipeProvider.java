@@ -10,6 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.soaringpromise.mmm.Mmm;
+import net.soaringpromise.mmm.registry.ModArmor;
 import net.soaringpromise.mmm.registry.ModBlocks;
 import net.soaringpromise.mmm.registry.ModItems;
 import net.soaringpromise.mmm.registry.ModTools;
@@ -47,7 +48,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         "lead_ingot_from_lead_block", "lead_ingot"
                 );
 
-                // Silver smelting
                 oreSmelting(
                         List.of(
                                 ModItems.RAW_SILVER,
@@ -73,7 +73,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         100,
                         "silver_ingot");
 
-                // Lead smelting
                 oreSmelting(
                         List.of(
                                 ModItems.RAW_LEAD,
@@ -86,7 +85,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         200,
                         "lead_ingot");
 
-                // Lead blasting
                 oreBlasting(
                         List.of(
                                 ModItems.RAW_LEAD,
@@ -99,7 +97,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         100,
                         "lead_ingot");
 
-                // Silver tools
                 toolRecipes(
                         ModItems.SILVER_INGOT,
                         ModTools.SILVER_SWORD,
@@ -110,7 +107,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         ModTools.SILVER_SPEAR
                 );
 
-                // Steel tools
                 toolRecipes(
                         ModItems.STEEL_INGOT,
                         ModTools.STEEL_SWORD,
@@ -121,7 +117,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         ModTools.STEEL_SPEAR
                 );
 
-                // Lead tools
                 toolRecipes(
                         ModItems.LEAD_INGOT,
                         ModTools.LEAD_SWORD,
@@ -130,6 +125,48 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         ModTools.LEAD_SHOVEL,
                         ModTools.LEAD_HOE,
                         ModTools.LEAD_SPEAR
+                );
+
+                armorRecipes(
+                        ModItems.SILVER_INGOT,
+                        ModArmor.SILVER_HELMET,
+                        ModArmor.SILVER_CHESTPLATE,
+                        ModArmor.SILVER_LEGGINGS,
+                        ModArmor.SILVER_BOOTS
+                );
+
+                armorRecipes(
+                        ModItems.STEEL_INGOT,
+                        ModArmor.STEEL_HELMET,
+                        ModArmor.STEEL_CHESTPLATE,
+                        ModArmor.STEEL_LEGGINGS,
+                        ModArmor.STEEL_BOOTS
+                );
+
+                armorRecipes(
+                        ModItems.LEAD_INGOT,
+                        ModArmor.LEAD_HELMET,
+                        ModArmor.LEAD_CHESTPLATE,
+                        ModArmor.LEAD_LEGGINGS,
+                        ModArmor.LEAD_BOOTS
+                );
+
+                nautilusArmorUpgrade(
+                        Items.COPPER_NAUTILUS_ARMOR,
+                        ModItems.LEAD_INGOT,
+                        ModArmor.LEAD_NAUTILUS_ARMOR
+                );
+
+                nautilusArmorUpgrade(
+                        Items.GOLDEN_NAUTILUS_ARMOR,
+                        ModItems.SILVER_INGOT,
+                        ModArmor.SILVER_NAUTILUS_ARMOR
+                );
+
+                nautilusArmorUpgrade(
+                        Items.IRON_NAUTILUS_ARMOR,
+                        ModItems.STEEL_INGOT,
+                        ModArmor.STEEL_NAUTILUS_ARMOR
                 );
 
                 shaped(RecipeCategory.TOOLS, ModTools.STEEL_FISHING_ROD)
@@ -166,7 +203,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             }
 
             private void toolRecipes(Item ingot, Item sword, Item pickaxe, Item axe, Item shovel, Item hoe, Item spear) {
-                // Sword
                 shaped(RecipeCategory.COMBAT, sword)
                         .pattern("M")
                         .pattern("M")
@@ -176,7 +212,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ingot), has(ingot))
                         .save(exporter);
 
-                // Pickaxe
                 shaped(RecipeCategory.TOOLS, pickaxe)
                         .pattern("MMM")
                         .pattern(" S ")
@@ -186,7 +221,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ingot), has(ingot))
                         .save(exporter);
 
-                // Axe
                 shaped(RecipeCategory.TOOLS, axe)
                         .pattern("MM")
                         .pattern("MS")
@@ -196,7 +230,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ingot), has(ingot))
                         .save(exporter);
 
-                // Shovel
                 shaped(RecipeCategory.TOOLS, shovel)
                         .pattern("M")
                         .pattern("S")
@@ -206,7 +239,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ingot), has(ingot))
                         .save(exporter);
 
-                // Hoe
                 shaped(RecipeCategory.TOOLS, hoe)
                         .pattern("MM")
                         .pattern(" S")
@@ -216,7 +248,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ingot), has(ingot))
                         .save(exporter);
 
-                // Spear
                 shaped(RecipeCategory.COMBAT, spear)
                         .pattern("  M")
                         .pattern(" S ")
@@ -224,6 +255,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('M', ingot)
                         .define('S', Items.STICK)
                         .unlockedBy(getHasName(ingot), has(ingot))
+                        .save(exporter);
+            }
+
+            private void armorRecipes(Item ingot, Item helmet, Item chestplate, Item leggings, Item boots) {
+                shaped(RecipeCategory.COMBAT, helmet)
+                        .pattern("MMM")
+                        .pattern("M M")
+                        .define('M', ingot)
+                        .unlockedBy(getHasName(ingot), has(ingot))
+                        .save(exporter);
+
+                shaped(RecipeCategory.COMBAT, chestplate)
+                        .pattern("M M")
+                        .pattern("MMM")
+                        .pattern("MMM")
+                        .define('M', ingot)
+                        .unlockedBy(getHasName(ingot), has(ingot))
+                        .save(exporter);
+
+                shaped(RecipeCategory.COMBAT, leggings)
+                        .pattern("MMM")
+                        .pattern("M M")
+                        .pattern("M M")
+                        .define('M', ingot)
+                        .unlockedBy(getHasName(ingot), has(ingot))
+                        .save(exporter);
+
+                shaped(RecipeCategory.COMBAT, boots)
+                        .pattern("M M")
+                        .pattern("M M")
+                        .define('M', ingot)
+                        .unlockedBy(getHasName(ingot), has(ingot))
+                        .save(exporter);
+            }
+
+            private void nautilusArmorUpgrade(Item base, Item ingot, Item result) {
+                shapeless(RecipeCategory.COMBAT, result)
+                        .requires(base)
+                        .requires(ingot, 4)
+                        .unlockedBy(getHasName(base), has(base))
                         .save(exporter);
             }
         };

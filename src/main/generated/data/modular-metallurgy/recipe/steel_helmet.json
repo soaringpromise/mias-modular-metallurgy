@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": "modular-metallurgy:steel_ingot"
+  },
+  "pattern": [
+    "MMM",
+    "M M"
+  ],
+  "result": {
+    "id": "modular-metallurgy:steel_helmet"
+  }
+}

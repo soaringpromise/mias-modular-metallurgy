@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:golden_nautilus_armor",
+    "modular-metallurgy:silver_ingot",
+    "modular-metallurgy:silver_ingot",
+    "modular-metallurgy:silver_ingot",
+    "modular-metallurgy:silver_ingot"
+  ],
+  "result": {
+    "id": "modular-metallurgy:silver_nautilus_armor"
+  }
+}

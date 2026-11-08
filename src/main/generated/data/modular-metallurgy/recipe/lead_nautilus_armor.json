@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:copper_nautilus_armor",
+    "modular-metallurgy:lead_ingot",
+    "modular-metallurgy:lead_ingot",
+    "modular-metallurgy:lead_ingot",
+    "modular-metallurgy:lead_ingot"
+  ],
+  "result": {
+    "id": "modular-metallurgy:lead_nautilus_armor"
+  }
+}

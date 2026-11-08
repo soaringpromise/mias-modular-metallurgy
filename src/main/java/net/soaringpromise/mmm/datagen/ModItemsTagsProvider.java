@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
+import net.soaringpromise.mmm.registry.ModArmor;
 import net.soaringpromise.mmm.registry.ModItems;
 import net.soaringpromise.mmm.registry.ModTags;
 import net.soaringpromise.mmm.registry.ModTools;
@@ -73,5 +74,25 @@ public class ModItemsTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         valueLookupBuilder(ItemTags.ARROWS)
                 .add(ModItems.SILVER_ARROW);
+
+        valueLookupBuilder(ItemTags.HEAD_ARMOR)
+                .add(ModArmor.SILVER_HELMET)
+                .add(ModArmor.STEEL_HELMET)
+                .add(ModArmor.LEAD_HELMET);
+
+        valueLookupBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModArmor.SILVER_CHESTPLATE)
+                .add(ModArmor.STEEL_CHESTPLATE)
+                .add(ModArmor.LEAD_CHESTPLATE);
+
+        valueLookupBuilder(ItemTags.LEG_ARMOR)
+                .add(ModArmor.SILVER_LEGGINGS)
+                .add(ModArmor.STEEL_LEGGINGS)
+                .add(ModArmor.LEAD_LEGGINGS);
+
+        valueLookupBuilder(ItemTags.FOOT_ARMOR)
+                .add(ModArmor.SILVER_BOOTS)
+                .add(ModArmor.STEEL_BOOTS)
+                .add(ModArmor.LEAD_BOOTS);
     }
 }

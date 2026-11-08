@@ -34,6 +34,13 @@ public final class ModCreativeTabs {
                         output.accept(ModTools.SILVER_SPEAR);
 
                         output.accept(ModItems.SILVER_ARROW);
+
+                        output.accept(ModArmor.SILVER_HELMET);
+                        output.accept(ModArmor.SILVER_CHESTPLATE);
+                        output.accept(ModArmor.SILVER_LEGGINGS);
+                        output.accept(ModArmor.SILVER_BOOTS);
+                        output.accept(ModArmor.SILVER_HORSE_ARMOR);
+                        output.accept(ModArmor.SILVER_NAUTILUS_ARMOR);
                     })
                     .build()
     );
@@ -60,6 +67,13 @@ public final class ModCreativeTabs {
 
                         output.accept(ModTools.STEEL_FISHING_ROD);
                         output.accept(ModTools.STEEL_SHEARS);
+
+                        output.accept(ModArmor.STEEL_HELMET);
+                        output.accept(ModArmor.STEEL_CHESTPLATE);
+                        output.accept(ModArmor.STEEL_LEGGINGS);
+                        output.accept(ModArmor.STEEL_BOOTS);
+                        output.accept(ModArmor.STEEL_HORSE_ARMOR);
+                        output.accept(ModArmor.STEEL_NAUTILUS_ARMOR);
                     })
                     .build()
     );
@@ -87,6 +101,13 @@ public final class ModCreativeTabs {
 
                         output.accept(ModTools.LEAD_SWORD);
                         output.accept(ModTools.LEAD_SPEAR);
+
+                        output.accept(ModArmor.LEAD_HELMET);
+                        output.accept(ModArmor.LEAD_CHESTPLATE);
+                        output.accept(ModArmor.LEAD_LEGGINGS);
+                        output.accept(ModArmor.LEAD_BOOTS);
+                        output.accept(ModArmor.LEAD_HORSE_ARMOR);
+                        output.accept(ModArmor.LEAD_NAUTILUS_ARMOR);
                     })
                     .build()
     );

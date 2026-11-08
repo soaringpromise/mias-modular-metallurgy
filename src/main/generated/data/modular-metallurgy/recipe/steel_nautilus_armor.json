@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:iron_nautilus_armor",
+    "modular-metallurgy:steel_ingot",
+    "modular-metallurgy:steel_ingot",
+    "modular-metallurgy:steel_ingot",
+    "modular-metallurgy:steel_ingot"
+  ],
+  "result": {
+    "id": "modular-metallurgy:steel_nautilus_armor"
+  }
+}
