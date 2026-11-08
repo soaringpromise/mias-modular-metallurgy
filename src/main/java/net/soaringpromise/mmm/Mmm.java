@@ -2,7 +2,8 @@ package net.soaringpromise.mmm;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
-import net.soaringpromise.mmm.registry.ModConfigs;
+import net.soaringpromise.mmm.registry.*;
+import net.soaringpromise.mmm.worldgen.gen.ModWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +15,14 @@ public class Mmm implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModConfigs.init();
+
+		ModItems.register();
+		ModBlocks.register();
+		ModCreativeTabs.register();
+
+		ModTools.register();
+
+		ModWorldGen.init();
 
 		LOGGER.info("{} successfully initialized.", MOD_NAME);
 	}

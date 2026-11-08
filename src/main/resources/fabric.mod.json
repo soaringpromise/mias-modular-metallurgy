@@ -26,6 +26,7 @@
 	"mixins": [
 		"modular-metallurgy.mixins.json"
 	],
+	"accessWidener": "modular-metallurgy.classtweaker",
 	"depends": {
 		"fabricloader": ">=0.20.1",
 		"minecraft": "~26.1.2",
