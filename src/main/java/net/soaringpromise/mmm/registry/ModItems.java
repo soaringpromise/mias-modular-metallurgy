@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.soaringpromise.mmm.Mmm;
+import net.soaringpromise.mmm.item.SilverArrowItem;
 
 import java.util.function.Function;
 
@@ -22,6 +23,8 @@ public final class ModItems {
     public static final Item SILVER_NUGGET = registerItem("silver_nugget", Item::new);
     public static final Item STEEL_NUGGET = registerItem("steel_nugget", Item::new);
     public static final Item LEAD_NUGGET = registerItem("lead_nugget", Item::new);
+
+    public static final Item SILVER_ARROW = registerItem("silver_arrow", SilverArrowItem::new);
 
     public static Item registerItem(String name, Function<Item.Properties, Item> factory) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Mmm.id(name));

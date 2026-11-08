@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "silver_ingot",
+  "ingredients": [
+    "modular-metallurgy:silver_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "modular-metallurgy:silver_ingot"
+  }
+}

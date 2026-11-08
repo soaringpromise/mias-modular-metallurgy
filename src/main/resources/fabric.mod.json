@@ -19,6 +19,9 @@
 		"main": [
           "net.soaringpromise.mmm.Mmm"
 		],
+		"client": [
+			"net.soaringpromise.mmm.client.MmmClient"
+		],
 		"fabric-datagen": [
 			"net.soaringpromise.mmm.MmmDataGenerator"
 		]

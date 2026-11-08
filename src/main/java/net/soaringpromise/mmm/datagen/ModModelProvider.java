@@ -49,6 +49,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModTools.STEEL_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModTools.STEEL_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateSpear(ModTools.STEEL_SPEAR);
+        itemModelGenerators.generateFlatItem(ModTools.STEEL_SHEARS, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateFlatItem(ModTools.SILVER_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModTools.SILVER_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -56,5 +57,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModTools.SILVER_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModTools.SILVER_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateSpear(ModTools.SILVER_SPEAR);
+        itemModelGenerators.generateFlatItem(ModItems.SILVER_ARROW, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModTools.LEAD_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModTools.LEAD_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModTools.LEAD_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModTools.LEAD_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModTools.LEAD_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateSpear(ModTools.LEAD_SPEAR);
     }
 }

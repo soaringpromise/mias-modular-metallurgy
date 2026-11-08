@@ -18,6 +18,7 @@ public class MmmDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemsTagsProvider::new);
 		pack.addProvider(ModBlockLootTableProvider::new);
 		pack.addProvider(ModRegistryDataProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 
 	@Override

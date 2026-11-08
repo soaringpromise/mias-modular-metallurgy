@@ -53,12 +53,12 @@ public class ModBlocksTagsProvider extends FabricTagsProvider.BlockTagsProvider 
                 .addTag(ModTags.Blocks.NEEDS_STEEL_TOOL);
 
         valueLookupBuilder(ModTags.Blocks.INCORRECT_FOR_LEAD_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_STONE_TOOL);
+                .addTag(BlockTags.NEEDS_IRON_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         valueLookupBuilder(ModTags.Blocks.INCORRECT_FOR_SILVER_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL);
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
-        valueLookupBuilder(ModTags.Blocks.INCORRECT_FOR_STEEL_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
+        valueLookupBuilder(ModTags.Blocks.INCORRECT_FOR_STEEL_TOOL);
     }
 }

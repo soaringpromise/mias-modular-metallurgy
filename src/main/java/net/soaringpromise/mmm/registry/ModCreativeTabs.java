@@ -16,8 +16,24 @@ public final class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModItems.SILVER_INGOT))
                     .title(Component.translatable("tab.modular-metallurgy.silver_items"))
                     .displayItems((_, output) -> {
+                        output.accept(ModBlocks.SILVER_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_SILVER_ORE);
+                        output.accept(ModBlocks.RAW_SILVER_BLOCK);
+                        output.accept(ModBlocks.SILVER_BLOCK);
+
+                        output.accept(ModItems.RAW_SILVER);
                         output.accept(ModItems.SILVER_INGOT);
                         output.accept(ModItems.SILVER_NUGGET);
+
+                        output.accept(ModTools.SILVER_PICKAXE);
+                        output.accept(ModTools.SILVER_AXE);
+                        output.accept(ModTools.SILVER_SHOVEL);
+                        output.accept(ModTools.SILVER_HOE);
+
+                        output.accept(ModTools.SILVER_SWORD);
+                        output.accept(ModTools.SILVER_SPEAR);
+
+                        output.accept(ModItems.SILVER_ARROW);
                     })
                     .build()
     );
@@ -29,8 +45,21 @@ public final class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModItems.STEEL_INGOT))
                     .title(Component.translatable("tab.modular-metallurgy.steel_items"))
                     .displayItems((_, output) -> {
+                        output.accept(ModBlocks.STEEL_BLOCK);
+
                         output.accept(ModItems.STEEL_INGOT);
                         output.accept(ModItems.STEEL_NUGGET);
+
+                        output.accept(ModTools.STEEL_PICKAXE);
+                        output.accept(ModTools.STEEL_AXE);
+                        output.accept(ModTools.STEEL_SHOVEL);
+                        output.accept(ModTools.STEEL_HOE);
+
+                        output.accept(ModTools.STEEL_SWORD);
+                        output.accept(ModTools.STEEL_SPEAR);
+
+                        output.accept(ModTools.STEEL_FISHING_ROD);
+                        output.accept(ModTools.STEEL_SHEARS);
                     })
                     .build()
     );
@@ -42,8 +71,22 @@ public final class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModItems.LEAD_INGOT))
                     .title(Component.translatable("tab.modular-metallurgy.lead_items"))
                     .displayItems((_, output) -> {
+                        output.accept(ModBlocks.LEAD_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_LEAD_ORE);
+                        output.accept(ModBlocks.RAW_LEAD_BLOCK);
+                        output.accept(ModBlocks.LEAD_BLOCK);
+
+                        output.accept(ModItems.RAW_LEAD);
                         output.accept(ModItems.LEAD_INGOT);
                         output.accept(ModItems.LEAD_NUGGET);
+
+                        output.accept(ModTools.LEAD_PICKAXE);
+                        output.accept(ModTools.LEAD_AXE);
+                        output.accept(ModTools.LEAD_SHOVEL);
+                        output.accept(ModTools.LEAD_HOE);
+
+                        output.accept(ModTools.LEAD_SWORD);
+                        output.accept(ModTools.LEAD_SPEAR);
                     })
                     .build()
     );

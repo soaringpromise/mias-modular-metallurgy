@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": "minecraft:feather",
+    "M": "modular-metallurgy:silver_ingot",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "M",
+    "S",
+    "F"
+  ],
+  "result": {
+    "count": 8,
+    "id": "modular-metallurgy:silver_arrow"
+  }
+}

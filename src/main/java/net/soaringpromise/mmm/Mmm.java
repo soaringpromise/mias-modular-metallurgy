@@ -2,6 +2,7 @@ package net.soaringpromise.mmm;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.level.block.DispenserBlock;
 import net.soaringpromise.mmm.registry.*;
 import net.soaringpromise.mmm.worldgen.gen.ModWorldGen;
 import org.slf4j.Logger;
@@ -18,9 +19,11 @@ public class Mmm implements ModInitializer {
 
 		ModItems.register();
 		ModBlocks.register();
+		ModTools.register();
 		ModCreativeTabs.register();
 
-		ModTools.register();
+		ModEntities.register();
+		DispenserBlock.registerProjectileBehavior(ModItems.SILVER_ARROW);
 
 		ModWorldGen.init();
 

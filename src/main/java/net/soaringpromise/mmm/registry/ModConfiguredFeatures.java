@@ -47,7 +47,6 @@ public final class ModConfiguredFeatures {
         );
     }
 
-
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, Mmm.id(name));
     }

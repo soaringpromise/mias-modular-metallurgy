@@ -29,26 +29,49 @@ public class ModItemsTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         valueLookupBuilder(ItemTags.SWORDS)
                 .add(ModTools.SILVER_SWORD)
-                .add(ModTools.STEEL_SWORD);
+                .add(ModTools.STEEL_SWORD)
+                .add(ModTools.LEAD_SWORD);
 
         valueLookupBuilder(ItemTags.PICKAXES)
                 .add(ModTools.SILVER_PICKAXE)
-                .add(ModTools.STEEL_PICKAXE);
+                .add(ModTools.STEEL_PICKAXE)
+                .add(ModTools.LEAD_PICKAXE);
 
         valueLookupBuilder(ItemTags.AXES)
                 .add(ModTools.SILVER_AXE)
-                .add(ModTools.STEEL_AXE);
+                .add(ModTools.STEEL_AXE)
+                .add(ModTools.LEAD_AXE);
 
         valueLookupBuilder(ItemTags.SHOVELS)
                 .add(ModTools.SILVER_SHOVEL)
-                .add(ModTools.STEEL_SHOVEL);
+                .add(ModTools.STEEL_SHOVEL)
+                .add(ModTools.LEAD_SHOVEL);
 
         valueLookupBuilder(ItemTags.HOES)
                 .add(ModTools.SILVER_HOE)
-                .add(ModTools.STEEL_HOE);
+                .add(ModTools.STEEL_HOE)
+                .add(ModTools.LEAD_HOE);
 
         valueLookupBuilder(ItemTags.SPEARS)
                 .add(ModTools.SILVER_SPEAR)
-                .add(ModTools.STEEL_SPEAR);
+                .add(ModTools.STEEL_SPEAR)
+                .add(ModTools.LEAD_SPEAR);
+
+        valueLookupBuilder(ItemTags.FISHING_ENCHANTABLE)
+                .add(ModTools.STEEL_FISHING_ROD);
+
+        valueLookupBuilder(ItemTags.MINING_ENCHANTABLE)
+                .add(ModTools.STEEL_SHEARS);
+
+        valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(ModTools.STEEL_FISHING_ROD)
+                .add(ModTools.STEEL_SHEARS);
+
+        valueLookupBuilder(ItemTags.VANISHING_ENCHANTABLE)
+                .add(ModTools.STEEL_FISHING_ROD)
+                .add(ModTools.STEEL_SHEARS);
+
+        valueLookupBuilder(ItemTags.ARROWS)
+                .add(ModItems.SILVER_ARROW);
     }
 }

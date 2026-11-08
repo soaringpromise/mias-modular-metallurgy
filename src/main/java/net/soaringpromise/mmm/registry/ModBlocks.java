@@ -29,11 +29,17 @@ public final class ModBlocks {
             p -> new Block(p.sound(SoundType.METAL).destroyTime(10f).explosionResistance(150f)
                     .requiresCorrectToolForDrops()));
 
-    public static final Block RAW_SILVER_BLOCK = registerBlock("raw_silver_block",
-            p -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK)));
+    public static final Block RAW_SILVER_BLOCK = registerBlock(
+            "raw_silver_block",
+            Block::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK)
+    );
 
-    public static final Block RAW_LEAD_BLOCK = registerBlock("raw_lead_block",
-            p -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_GOLD_BLOCK)));
+    public static final Block RAW_LEAD_BLOCK = registerBlock(
+            "raw_lead_block",
+            Block::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_GOLD_BLOCK)
+    );
 
     public static final Block SILVER_ORE = registerBlock("silver_ore",
             p -> new DropExperienceBlock(UniformInt.of(2, 5),
@@ -55,10 +61,16 @@ public final class ModBlocks {
                     p.sound(SoundType.DEEPSLATE).destroyTime(4f).explosionResistance(4f)
                     .requiresCorrectToolForDrops()));
 
-    private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
-        Block b = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Mmm.id(name))));
-        registerBlockItem(name, b);
-        return Registry.register(BuiltInRegistries.BLOCK, Mmm.id(name), b);
+    private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> factory) {
+        return registerBlock(name, factory, BlockBehaviour.Properties.of());
+    }
+
+    private static Block registerBlock(
+            String name, Function<BlockBehaviour.Properties, Block> factory, BlockBehaviour.Properties properties) {
+        ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, Mmm.id(name));
+        Block block = factory.apply(properties.setId(key));
+        registerBlockItem(name, block);
+        return Registry.register(BuiltInRegistries.BLOCK, key, block);
     }
 
     private static void registerBlockItem(String name, Block block) {
