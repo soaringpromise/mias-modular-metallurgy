@@ -87,5 +87,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModArmor.LEAD_BOOTS, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModArmor.LEAD_HORSE_ARMOR, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModArmor.LEAD_NAUTILUS_ARMOR, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.STEEL_BLEND, ModelTemplates.FLAT_ITEM);
     }
 }

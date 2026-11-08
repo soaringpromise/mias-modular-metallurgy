@@ -54,6 +54,7 @@ public final class ModCreativeTabs {
                     .displayItems((_, output) -> {
                         output.accept(ModBlocks.STEEL_BLOCK);
 
+                        output.accept(ModItems.STEEL_BLEND);
                         output.accept(ModItems.STEEL_INGOT);
                         output.accept(ModItems.STEEL_NUGGET);
 

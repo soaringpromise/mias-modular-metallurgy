@@ -3,9 +3,12 @@ package net.soaringpromise.mmm.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
@@ -200,6 +203,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                                 getHasName(ModItems.SILVER_INGOT),
                                 has(ModItems.SILVER_INGOT))
                         .save(exporter);
+
+                shapeless(RecipeCategory.MISC, ModItems.STEEL_BLEND)
+                        .requires(Items.RAW_IRON)
+                        .requires(ItemTags.COALS)
+                        .requires(ItemTags.COALS)
+                        .requires(Items.CALCITE)
+                        .unlockedBy(
+                                getHasName(Items.RAW_IRON),
+                                has(Items.RAW_IRON)
+                        )
+                        .save(exporter);
+
+                oreBlasting(
+                        List.of(ModItems.STEEL_BLEND),
+                        RecipeCategory.MISC,
+                        CookingBookCategory.MISC,
+                        ModItems.STEEL_INGOT,
+                        1f,
+                        100,
+                        "steel_ingot"
+                );
+
+                // Renewable Calcite: Pointed Dripstone + Bone Meal
+                shaped(RecipeCategory.BUILDING_BLOCKS, Items.CALCITE, 2)
+                        .pattern("DB")
+                        .pattern("BD")
+                        .define('D', Items.POINTED_DRIPSTONE)
+                        .define('B', Items.BONE_MEAL)
+                        .unlockedBy(
+                                getHasName(Items.POINTED_DRIPSTONE),
+                                has(Items.POINTED_DRIPSTONE)
+                        )
+                        .save(exporter, ResourceKey.create(Registries.RECIPE, Mmm.id("calcite_from_dripstone")));
             }
 
             private void toolRecipes(Item ingot, Item sword, Item pickaxe, Item axe, Item shovel, Item hoe, Item spear) {

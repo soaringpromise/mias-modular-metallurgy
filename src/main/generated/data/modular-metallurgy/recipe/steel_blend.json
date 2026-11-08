@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:raw_iron",
+    "#minecraft:coals",
+    "#minecraft:coals",
+    "minecraft:calcite"
+  ],
+  "result": {
+    "id": "modular-metallurgy:steel_blend"
+  }
+}

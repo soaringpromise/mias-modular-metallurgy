@@ -25,6 +25,7 @@ public final class ModItems {
     public static final Item LEAD_NUGGET = registerItem("lead_nugget", Item::new);
 
     public static final Item SILVER_ARROW = registerItem("silver_arrow", SilverArrowItem::new);
+    public static final Item STEEL_BLEND = registerItem("steel_blend", Item::new);
 
     public static Item registerItem(String name, Function<Item.Properties, Item> factory) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Mmm.id(name));
