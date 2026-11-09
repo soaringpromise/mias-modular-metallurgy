@@ -1,5 +1,40 @@
 {
   "tab.modular-metallurgy.silver_items": "Modular Metallurgy: Silver",
   "tab.modular-metallurgy.steel_items": "Modular Metallurgy: Steel",
-  "tab.modular-metallurgy.lead_items": "Modular Metallurgy: Lead"
+  "tab.modular-metallurgy.lead_items": "Modular Metallurgy: Lead",
+
+  "tooltip.modular-metallurgy.armor.full_set": "Full Set Effects",
+
+  "tooltip.modular-metallurgy.armor.leather.bonus.1": "+12% Jump Strength",
+  "tooltip.modular-metallurgy.armor.leather.bonus.2": "-25% Fall Damage",
+
+  "tooltip.modular-metallurgy.armor.gold.bonus.1": "+20% Attack Speed",
+
+  "tooltip.modular-metallurgy.armor.copper.bonus.1": "+12% Movement Speed",
+  "tooltip.modular-metallurgy.armor.copper.bonus.2": "+20% Mining Speed",
+  "tooltip.modular-metallurgy.armor.copper.drawback.1": "4x Lightning Damage Taken",
+  "tooltip.modular-metallurgy.armor.copper.drawback.2": "+25% Knockback Taken",
+
+  "tooltip.modular-metallurgy.armor.chainmail.bonus.1": "-15% Melee Damage Taken",
+  "tooltip.modular-metallurgy.armor.chainmail.drawback.1": "+10% Projectile Damage Taken",
+
+  "tooltip.modular-metallurgy.armor.lead.bonus.1": "-16% Explosion Damage Taken",
+  "tooltip.modular-metallurgy.armor.lead.bonus.2": "+30% Explosion Knockback Resistance",
+  "tooltip.modular-metallurgy.armor.lead.drawback.1": "-4 Maximum Health",
+
+  "tooltip.modular-metallurgy.armor.iron.bonus.1": "+20% Knockback Resistance",
+
+  "tooltip.modular-metallurgy.armor.silver.bonus.1": "-25% Damage Taken from Undead",
+
+  "tooltip.modular-metallurgy.armor.steel.bonus.1": "+4 Maximum Health",
+  "tooltip.modular-metallurgy.armor.steel.drawback.1": "-10% Movement Speed",
+
+  "tooltip.modular-metallurgy.armor.diamond.bonus.1": "Innate Projectile Protection II",
+  "tooltip.modular-metallurgy.armor.diamond.drawback.1": "+15% Explosion Damage Taken",
+
+  "tooltip.modular-metallurgy.armor.netherite.bonus.1": "Innate Fire Protection II",
+  "tooltip.modular-metallurgy.armor.netherite.bonus.2": "-30% Burning Duration",
+  "tooltip.modular-metallurgy.armor.netherite.drawback.1": "+20% Gravity",
+
+  "tooltip.modular-metallurgy.silver.undead_damage": "Deals 2x damage to undead"
 }

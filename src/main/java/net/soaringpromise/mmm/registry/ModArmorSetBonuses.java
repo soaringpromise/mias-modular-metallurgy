@@ -147,7 +147,7 @@ public final class ModArmorSetBonuses {
         }
     }
 
-    private static boolean isSetBonusEnabled(ResourceKey<EquipmentAsset> assetId) {
+    public static boolean isSetBonusEnabled(ResourceKey<EquipmentAsset> assetId) {
         MetallurgyConfig config = MetallurgyConfig.INSTANCE;
 
         if (assetId.equals(EquipmentAssets.LEATHER)) return config.leatherSetBonus.get();

@@ -8,7 +8,8 @@
     "common.ArmorProtectionMixin",
     "common.FishingHookMixin",
     "common.ItemPredicateMixin",
-    "common.SheepMixin"
+    "common.SheepMixin",
+    "common.SilverDamageMixin"
   ],
   "injectors": {
     "defaultRequire": 1

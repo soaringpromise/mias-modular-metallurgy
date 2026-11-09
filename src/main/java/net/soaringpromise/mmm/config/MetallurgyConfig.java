@@ -22,6 +22,10 @@ public class MetallurgyConfig extends Config {
     @ConfigGroup.Pop
     public ValidatedBoolean netheriteSetBonus = new ValidatedBoolean(true);
 
+    public ConfigGroup silverUndeadEffectiveness = new ConfigGroup("silverUndeadEffectiveness");
+    @ConfigGroup.Pop
+    public ValidatedBoolean silverUndeadDamageBonus = new ValidatedBoolean(true);
+
     public static void register() {
         INSTANCE = ConfigApiJava.registerAndLoadConfig(MetallurgyConfig::new);
     }

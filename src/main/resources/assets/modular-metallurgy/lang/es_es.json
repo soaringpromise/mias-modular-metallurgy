@@ -1,5 +1,40 @@
 {
   "tab.modular-metallurgy.silver_items": "Metalurgia Modular: Plata",
   "tab.modular-metallurgy.steel_items": "Metalurgia Modular: Acero",
-  "tab.modular-metallurgy.lead_items": "Metalurgia Modular: Plomo"
+  "tab.modular-metallurgy.lead_items": "Metalurgia Modular: Plomo",
+
+  "tooltip.modular-metallurgy.armor.full_set": "Efectos del conjunto completo",
+
+  "tooltip.modular-metallurgy.armor.leather.bonus.1": "+12% de fuerza de salto",
+  "tooltip.modular-metallurgy.armor.leather.bonus.2": "-25% de daño por caída",
+
+  "tooltip.modular-metallurgy.armor.gold.bonus.1": "+20% de velocidad de ataque",
+
+  "tooltip.modular-metallurgy.armor.copper.bonus.1": "+12% de velocidad de movimiento",
+  "tooltip.modular-metallurgy.armor.copper.bonus.2": "+20% de velocidad de minado",
+  "tooltip.modular-metallurgy.armor.copper.drawback.1": "Daño por rayos x4",
+  "tooltip.modular-metallurgy.armor.copper.drawback.2": "+25% de retroceso recibido",
+
+  "tooltip.modular-metallurgy.armor.chainmail.bonus.1": "-15% de daño cuerpo a cuerpo recibido",
+  "tooltip.modular-metallurgy.armor.chainmail.drawback.1": "+10% de daño por proyectiles recibido",
+
+  "tooltip.modular-metallurgy.armor.lead.bonus.1": "-16% de daño por explosiones recibido",
+  "tooltip.modular-metallurgy.armor.lead.bonus.2": "+30% de resistencia al retroceso por explosiones",
+  "tooltip.modular-metallurgy.armor.lead.drawback.1": "-4 puntos de salud máxima",
+
+  "tooltip.modular-metallurgy.armor.iron.bonus.1": "+20% de resistencia al retroceso",
+
+  "tooltip.modular-metallurgy.armor.silver.bonus.1": "-25% de daño recibido de no muertos",
+
+  "tooltip.modular-metallurgy.armor.steel.bonus.1": "+4 puntos de salud máxima",
+  "tooltip.modular-metallurgy.armor.steel.drawback.1": "-10% de velocidad de movimiento",
+
+  "tooltip.modular-metallurgy.armor.diamond.bonus.1": "Protección contra proyectiles II innata",
+  "tooltip.modular-metallurgy.armor.diamond.drawback.1": "+15% de daño por explosiones recibido",
+
+  "tooltip.modular-metallurgy.armor.netherite.bonus.1": "Protección contra el fuego II innata",
+  "tooltip.modular-metallurgy.armor.netherite.bonus.2": "-30% de duración al quemarse",
+  "tooltip.modular-metallurgy.armor.netherite.drawback.1": "+20% de gravedad",
+
+  "tooltip.modular-metallurgy.silver.undead_damage": "Inflige el doble de daño a los no muertos"
 }

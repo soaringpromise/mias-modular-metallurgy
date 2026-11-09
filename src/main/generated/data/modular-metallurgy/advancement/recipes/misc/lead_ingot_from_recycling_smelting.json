@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_recyclable_equipment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#modular-metallurgy:recyclable/lead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "modular-metallurgy:lead_ingot_from_recycling_smelting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_recyclable_equipment"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "modular-metallurgy:lead_ingot_from_recycling_smelting"
+    ]
+  }
+}

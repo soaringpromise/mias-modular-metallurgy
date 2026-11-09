@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": "#modular-metallurgy:recyclable/steel",
+  "result": {
+    "id": "modular-metallurgy:steel_ingot"
+  }
+}

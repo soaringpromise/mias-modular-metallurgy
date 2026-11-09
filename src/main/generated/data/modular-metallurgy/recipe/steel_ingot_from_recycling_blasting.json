@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": "#modular-metallurgy:recyclable/steel",
+  "result": {
+    "id": "modular-metallurgy:steel_ingot"
+  }
+}
