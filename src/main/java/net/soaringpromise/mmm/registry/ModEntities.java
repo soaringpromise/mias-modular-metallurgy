@@ -7,7 +7,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.soaringpromise.mmm.Mmm;
-import net.soaringpromise.mmm.entity.SilverArrowEntity;
+import net.soaringpromise.mmm.entity.custom.SilverArrowEntity;
 
 public final class ModEntities {
 

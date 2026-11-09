@@ -21,7 +21,7 @@ public abstract class ItemPredicateMixin {
                     target = "Lnet/minecraft/world/item/ItemInstance;is(Lnet/minecraft/core/HolderSet;)Z"
             )
     )
-    private boolean mmm$allowSteelShears(ItemInstance stack, HolderSet<Item> items, Operation<Boolean> original) {
+    private boolean modularmetallurgy$allowSteelShears(ItemInstance stack, HolderSet<Item> items, Operation<Boolean> original) {
         if (original.call(stack, items))
             return true;
 

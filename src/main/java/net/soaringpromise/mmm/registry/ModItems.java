@@ -8,7 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.soaringpromise.mmm.Mmm;
-import net.soaringpromise.mmm.item.SilverArrowItem;
+import net.soaringpromise.mmm.item.custom.SilverArrowItem;
 
 import java.util.function.Function;
 

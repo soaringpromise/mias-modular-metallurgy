@@ -3,6 +3,9 @@
   "package": "net.soaringpromise.mmm.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
+    "common.ArmorDamageMixin",
+    "common.ArmorKnockbackMixin",
+    "common.ArmorProtectionMixin",
     "common.FishingHookMixin",
     "common.ItemPredicateMixin",
     "common.SheepMixin"

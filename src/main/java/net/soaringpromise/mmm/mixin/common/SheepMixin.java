@@ -18,7 +18,7 @@ public abstract class SheepMixin {
                     target = "Lnet/minecraft/world/item/ItemStack;is(Ljava/lang/Object;)Z"
             )
     )
-    private boolean mmm$allowSteelShears(ItemStack stack, Object item, Operation<Boolean> original) {
+    private boolean modularmetallurgy$allowSteelShears(ItemStack stack, Object item, Operation<Boolean> original) {
         return original.call(stack, item) || (item == Items.SHEARS && stack.is(ModTools.STEEL_SHEARS));
     }
 }

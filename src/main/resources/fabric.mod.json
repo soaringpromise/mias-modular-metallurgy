@@ -17,10 +17,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "net.soaringpromise.mmm.Mmm"
+			"net.soaringpromise.mmm.Mmm"
 		],
 		"client": [
-			"net.soaringpromise.mmm.client.MmmClient"
+			"net.soaringpromise.mmm.MmmClient"
 		],
 		"fabric-datagen": [
 			"net.soaringpromise.mmm.MmmDataGenerator"

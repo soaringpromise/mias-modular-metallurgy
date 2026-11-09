@@ -1,4 +1,4 @@
-package net.soaringpromise.mmm.item;
+package net.soaringpromise.mmm.item.custom;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
@@ -8,7 +8,7 @@ import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.item.ArrowItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.soaringpromise.mmm.entity.SilverArrowEntity;
+import net.soaringpromise.mmm.entity.custom.SilverArrowEntity;
 import org.jspecify.annotations.NonNull;
 
 public class SilverArrowItem extends ArrowItem {

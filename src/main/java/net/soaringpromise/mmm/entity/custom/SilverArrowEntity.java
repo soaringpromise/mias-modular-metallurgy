@@ -1,4 +1,4 @@
-package net.soaringpromise.mmm.entity;
+package net.soaringpromise.mmm.entity.custom;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.tags.EntityTypeTags;

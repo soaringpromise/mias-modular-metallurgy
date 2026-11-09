@@ -16,7 +16,7 @@ public abstract class FishingHookMixin {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;is(Ljava/lang/Object;)Z"
             )
     )
-    private boolean modularmetalurgy$allowSteelFishingRod(ItemStack stack, Object item, Operation<Boolean> original) {
+    private boolean modularmetallurgy$allowSteelFishingRod(ItemStack stack, Object item, Operation<Boolean> original) {
         return original.call(stack, item) || (item == Items.FISHING_ROD && stack.is(ModTools.STEEL_FISHING_ROD));
     }
 }

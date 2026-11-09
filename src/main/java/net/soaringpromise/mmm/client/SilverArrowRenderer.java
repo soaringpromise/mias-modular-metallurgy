@@ -5,7 +5,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.state.ArrowRenderState;
 import net.minecraft.resources.Identifier;
 import net.soaringpromise.mmm.Mmm;
-import net.soaringpromise.mmm.entity.SilverArrowEntity;
+import net.soaringpromise.mmm.entity.custom.SilverArrowEntity;
 import org.jspecify.annotations.NonNull;
 
 public class SilverArrowRenderer extends ArrowRenderer<SilverArrowEntity, ArrowRenderState> {
