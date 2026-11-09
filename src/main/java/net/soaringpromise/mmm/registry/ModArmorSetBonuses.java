@@ -16,6 +16,7 @@ import net.minecraft.world.item.equipment.EquipmentAsset;
 import net.minecraft.world.item.equipment.EquipmentAssets;
 import net.minecraft.world.item.equipment.Equippable;
 import net.soaringpromise.mmm.Mmm;
+import net.soaringpromise.mmm.config.MetallurgyConfig;
 
 public final class ModArmorSetBonuses {
     private static final EquipmentSlot[] ARMOR_SLOTS = {
@@ -107,12 +108,12 @@ public final class ModArmorSetBonuses {
             player.setHealth(player.getMaxHealth());
     }
 
-    public static boolean hasFullSet(ServerPlayer player, ResourceKey<EquipmentAsset> assetId
-    ) {
+    public static boolean hasFullSet(ServerPlayer player, ResourceKey<EquipmentAsset> assetId) {
+        if (!isSetBonusEnabled(assetId)) return false;
+
         for (EquipmentSlot slot : ARMOR_SLOTS) {
             ItemStack stack = player.getItemBySlot(slot);
-            if (stack.isEmpty())
-                return false;
+            if (stack.isEmpty()) return false;
 
             Equippable equippable = stack.get(DataComponents.EQUIPPABLE);
             if (equippable == null
@@ -144,5 +145,22 @@ public final class ModArmorSetBonuses {
         } else if (instance.hasModifier(id)) {
             instance.removeModifier(id);
         }
+    }
+
+    private static boolean isSetBonusEnabled(ResourceKey<EquipmentAsset> assetId) {
+        MetallurgyConfig config = MetallurgyConfig.INSTANCE;
+
+        if (assetId.equals(EquipmentAssets.LEATHER)) return config.leatherSetBonus.get();
+        if (assetId.equals(EquipmentAssets.GOLD)) return config.goldSetBonus.get();
+        if (assetId.equals(EquipmentAssets.COPPER)) return config.copperSetBonus.get();
+        if (assetId.equals(EquipmentAssets.CHAINMAIL)) return config.chainmailSetBonus.get();
+        if (assetId.equals(ModArmorMaterials.LEAD_KEY)) return config.leadSetBonus.get();
+        if (assetId.equals(EquipmentAssets.IRON)) return config.ironSetBonus.get();
+        if (assetId.equals(ModArmorMaterials.SILVER_KEY)) return config.silverSetBonus.get();
+        if (assetId.equals(ModArmorMaterials.STEEL_KEY)) return config.steelSetBonus.get();
+        if (assetId.equals(EquipmentAssets.DIAMOND)) return config.diamondSetBonus.get();
+        if (assetId.equals(EquipmentAssets.NETHERITE)) return config.netheriteSetBonus.get();
+
+        return true;
     }
 }

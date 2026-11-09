@@ -26,18 +26,15 @@ public abstract class ArmorProtectionMixin {
         if (!(victim instanceof ServerPlayer player))
             return;
 
-        if (source.is(DamageTypeTags.IS_EXPLOSION)
-                && ModArmorSetBonuses.hasFullSet(player, ModArmorMaterials.LEAD_KEY)) {
+        if (source.is(DamageTypeTags.IS_EXPLOSION) && ModArmorSetBonuses.hasFullSet(player, ModArmorMaterials.LEAD_KEY)) {
             cir.setReturnValue(cir.getReturnValueF() + 4.0f);
         }
 
-        if (source.is(DamageTypeTags.IS_PROJECTILE)
-                && ModArmorSetBonuses.hasFullSet(player, EquipmentAssets.DIAMOND)) {
+        if (source.is(DamageTypeTags.IS_PROJECTILE) && ModArmorSetBonuses.hasFullSet(player, EquipmentAssets.DIAMOND)) {
             cir.setReturnValue(cir.getReturnValueF() + 4.0f);
         }
 
-        if (source.is(DamageTypeTags.IS_FIRE)
-                && ModArmorSetBonuses.hasFullSet(player, EquipmentAssets.NETHERITE)) {
+        if (source.is(DamageTypeTags.IS_FIRE) && ModArmorSetBonuses.hasFullSet(player, EquipmentAssets.NETHERITE)) {
             cir.setReturnValue(cir.getReturnValueF() + 4.0f);
         }
     }

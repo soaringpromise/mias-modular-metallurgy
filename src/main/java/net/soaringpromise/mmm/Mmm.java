@@ -3,6 +3,7 @@ package net.soaringpromise.mmm;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.DispenserBlock;
+import net.soaringpromise.mmm.config.MetallurgyConfig;
 import net.soaringpromise.mmm.registry.ModArmorSetBonuses;
 import net.soaringpromise.mmm.registry.*;
 import net.soaringpromise.mmm.worldgen.gen.ModWorldGen;
@@ -16,7 +17,7 @@ public class Mmm implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModConfigs.init();
+		MetallurgyConfig.register();
 
 		ModItems.register();
 		ModBlocks.register();
