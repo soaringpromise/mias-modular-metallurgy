@@ -1,40 +1,139 @@
 {
+  "modmenu.descriptionTranslation.modular-metallurgy": "A modular Vanilla+ Minecraft mod that expands metallurgy with new metals, equipment, armor set effects, and quality-of-life improvements.",
+  "modmenu.summaryTranslation.modular-metallurgy": "New metals, equipment, armor bonuses, and metallurgy improvements.",
+
+  "modular-metallurgy.config": "Mia's Modular Metallurgy",
+
+  "modular-metallurgy.config.setBonuses": "Armor Set Bonuses",
+  "modular-metallurgy.config.silverUndeadEffectiveness": "Silver Effectiveness",
+
+  "modular-metallurgy.config.leatherSetBonus": "Leather Set Effects",
+  "modular-metallurgy.config.leatherSetBonus.desc": "Enables the exploration bonuses granted by wearing a full set of Leather armor.",
+
+  "modular-metallurgy.config.goldSetBonus": "Gold Set Effects",
+  "modular-metallurgy.config.goldSetBonus.desc": "Enables the increased attack speed granted by wearing a full set of Golden armor.",
+
+  "modular-metallurgy.config.copperSetBonus": "Copper Set Effects",
+  "modular-metallurgy.config.copperSetBonus.desc": "Enables the movement and mining speed bonuses, as well as the lightning and knockback vulnerabilities, of full Copper armor.",
+
+  "modular-metallurgy.config.chainmailSetBonus": "Chainmail Set Effects",
+  "modular-metallurgy.config.chainmailSetBonus.desc": "Enables the melee damage resistance and projectile vulnerability of full Chainmail armor.",
+
+  "modular-metallurgy.config.leadSetBonus": "Lead Set Effects",
+  "modular-metallurgy.config.leadSetBonus.desc": "Enables the explosion protection and maximum health penalty of full Lead armor.",
+
+  "modular-metallurgy.config.ironSetBonus": "Iron Set Effects",
+  "modular-metallurgy.config.ironSetBonus.desc": "Enables the additional knockback resistance granted by wearing a full set of Iron armor.",
+
+  "modular-metallurgy.config.silverSetBonus": "Silver Set Effects",
+  "modular-metallurgy.config.silverSetBonus.desc": "Enables the reduced damage taken from undead enemies while wearing a full set of Silver armor.",
+
+  "modular-metallurgy.config.steelSetBonus": "Steel Set Effects",
+  "modular-metallurgy.config.steelSetBonus.desc": "Enables the increased maximum health and movement penalties of full Steel armor.",
+
+  "modular-metallurgy.config.diamondSetBonus": "Diamond Set Effects",
+  "modular-metallurgy.config.diamondSetBonus.desc": "Enables the innate Projectile Protection and explosion vulnerability of full Diamond armor.",
+
+  "modular-metallurgy.config.netheriteSetBonus": "Netherite Set Effects",
+  "modular-metallurgy.config.netheriteSetBonus.desc": "Enables the innate Fire Protection, reduced burning duration, and increased gravity of full Netherite armor.",
+
+  "modular-metallurgy.config.silverUndeadDamageBonus": "Silver Damage Against Undead",
+  "modular-metallurgy.config.silverUndeadDamageBonus.desc": "Allows Silver tools and weapons to deal double damage to undead enemies.",
+
   "tab.modular-metallurgy.silver_items": "Modular Metallurgy: Silver",
   "tab.modular-metallurgy.steel_items": "Modular Metallurgy: Steel",
   "tab.modular-metallurgy.lead_items": "Modular Metallurgy: Lead",
 
-  "tooltip.modular-metallurgy.armor.full_set": "Full Set Effects",
+  "item.modular-metallurgy.raw_silver": "Raw Silver",
+  "item.modular-metallurgy.raw_lead": "Raw Lead",
+  "item.modular-metallurgy.silver_ingot": "Silver Ingot",
+  "item.modular-metallurgy.steel_ingot": "Steel Ingot",
+  "item.modular-metallurgy.lead_ingot": "Lead Ingot",
+  "item.modular-metallurgy.silver_nugget": "Silver Nugget",
+  "item.modular-metallurgy.steel_nugget": "Steel Nugget",
+  "item.modular-metallurgy.lead_nugget": "Lead Nugget",
+  "item.modular-metallurgy.silver_arrow": "Silver Arrow",
+  "item.modular-metallurgy.steel_blend": "Steel Blend",
 
+  "block.modular-metallurgy.silver_block": "Block of Silver",
+  "block.modular-metallurgy.steel_block": "Block of Steel",
+  "block.modular-metallurgy.lead_block": "Block of Lead",
+  "block.modular-metallurgy.raw_silver_block": "Block of Raw Silver",
+  "block.modular-metallurgy.raw_lead_block": "Block of Raw Lead",
+  "block.modular-metallurgy.silver_ore": "Silver Ore",
+  "block.modular-metallurgy.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.modular-metallurgy.lead_ore": "Lead Ore",
+  "block.modular-metallurgy.deepslate_lead_ore": "Deepslate Lead Ore",
+
+  "item.modular-metallurgy.silver_sword": "Silver Sword",
+  "item.modular-metallurgy.silver_pickaxe": "Silver Pickaxe",
+  "item.modular-metallurgy.silver_shovel": "Silver Shovel",
+  "item.modular-metallurgy.silver_axe": "Silver Axe",
+  "item.modular-metallurgy.silver_hoe": "Silver Hoe",
+  "item.modular-metallurgy.silver_spear": "Silver Spear",
+
+  "item.modular-metallurgy.steel_sword": "Steel Sword",
+  "item.modular-metallurgy.steel_pickaxe": "Steel Pickaxe",
+  "item.modular-metallurgy.steel_shovel": "Steel Shovel",
+  "item.modular-metallurgy.steel_axe": "Steel Axe",
+  "item.modular-metallurgy.steel_hoe": "Steel Hoe",
+  "item.modular-metallurgy.steel_spear": "Steel Spear",
+  "item.modular-metallurgy.steel_fishing_rod": "Steel Fishing Rod",
+  "item.modular-metallurgy.steel_shears": "Steel Shears",
+
+  "item.modular-metallurgy.lead_sword": "Lead Sword",
+  "item.modular-metallurgy.lead_pickaxe": "Lead Pickaxe",
+  "item.modular-metallurgy.lead_shovel": "Lead Shovel",
+  "item.modular-metallurgy.lead_axe": "Lead Axe",
+  "item.modular-metallurgy.lead_hoe": "Lead Hoe",
+  "item.modular-metallurgy.lead_spear": "Lead Spear",
+
+  "item.modular-metallurgy.silver_helmet": "Silver Helmet",
+  "item.modular-metallurgy.silver_chestplate": "Silver Chestplate",
+  "item.modular-metallurgy.silver_leggings": "Silver Leggings",
+  "item.modular-metallurgy.silver_boots": "Silver Boots",
+  "item.modular-metallurgy.silver_horse_armor": "Silver Horse Armor",
+  "item.modular-metallurgy.silver_nautilus_armor": "Silver Nautilus Armor",
+
+  "item.modular-metallurgy.steel_helmet": "Steel Helmet",
+  "item.modular-metallurgy.steel_chestplate": "Steel Chestplate",
+  "item.modular-metallurgy.steel_leggings": "Steel Leggings",
+  "item.modular-metallurgy.steel_boots": "Steel Boots",
+  "item.modular-metallurgy.steel_horse_armor": "Steel Horse Armor",
+  "item.modular-metallurgy.steel_nautilus_armor": "Steel Nautilus Armor",
+
+  "item.modular-metallurgy.lead_helmet": "Lead Helmet",
+  "item.modular-metallurgy.lead_chestplate": "Lead Chestplate",
+  "item.modular-metallurgy.lead_leggings": "Lead Leggings",
+  "item.modular-metallurgy.lead_boots": "Lead Boots",
+  "item.modular-metallurgy.lead_horse_armor": "Lead Horse Armor",
+  "item.modular-metallurgy.lead_nautilus_armor": "Lead Nautilus Armor",
+
+  "tooltip.modular-metallurgy.armor.full_set": "Full Set Effects",
   "tooltip.modular-metallurgy.armor.leather.bonus.1": "+12% Jump Strength",
   "tooltip.modular-metallurgy.armor.leather.bonus.2": "-25% Fall Damage",
-
   "tooltip.modular-metallurgy.armor.gold.bonus.1": "+20% Attack Speed",
-
   "tooltip.modular-metallurgy.armor.copper.bonus.1": "+12% Movement Speed",
   "tooltip.modular-metallurgy.armor.copper.bonus.2": "+20% Mining Speed",
   "tooltip.modular-metallurgy.armor.copper.drawback.1": "4x Lightning Damage Taken",
   "tooltip.modular-metallurgy.armor.copper.drawback.2": "+25% Knockback Taken",
-
   "tooltip.modular-metallurgy.armor.chainmail.bonus.1": "-15% Melee Damage Taken",
   "tooltip.modular-metallurgy.armor.chainmail.drawback.1": "+10% Projectile Damage Taken",
-
   "tooltip.modular-metallurgy.armor.lead.bonus.1": "-16% Explosion Damage Taken",
   "tooltip.modular-metallurgy.armor.lead.bonus.2": "+30% Explosion Knockback Resistance",
   "tooltip.modular-metallurgy.armor.lead.drawback.1": "-4 Maximum Health",
-
   "tooltip.modular-metallurgy.armor.iron.bonus.1": "+20% Knockback Resistance",
-
   "tooltip.modular-metallurgy.armor.silver.bonus.1": "-25% Damage Taken from Undead",
-
   "tooltip.modular-metallurgy.armor.steel.bonus.1": "+4 Maximum Health",
   "tooltip.modular-metallurgy.armor.steel.drawback.1": "-10% Movement Speed",
-
+  "tooltip.modular-metallurgy.armor.steel.drawback.2": "-6% Jump Strength",
   "tooltip.modular-metallurgy.armor.diamond.bonus.1": "Innate Projectile Protection II",
   "tooltip.modular-metallurgy.armor.diamond.drawback.1": "+15% Explosion Damage Taken",
-
   "tooltip.modular-metallurgy.armor.netherite.bonus.1": "Innate Fire Protection II",
   "tooltip.modular-metallurgy.armor.netherite.bonus.2": "-30% Burning Duration",
   "tooltip.modular-metallurgy.armor.netherite.drawback.1": "+20% Gravity",
+  "tooltip.modular-metallurgy.silver.undead_damage": "Deals 2x damage to undead",
 
-  "tooltip.modular-metallurgy.silver.undead_damage": "Deals 2x damage to undead"
+  "trim_material.modular-metallurgy.silver": "Silver",
+  "trim_material.modular-metallurgy.lead": "Lead"
 }

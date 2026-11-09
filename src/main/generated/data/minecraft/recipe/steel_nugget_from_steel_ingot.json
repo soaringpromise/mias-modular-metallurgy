@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "steel_nugget",
+  "ingredients": [
+    "modular-metallurgy:steel_ingot"
+  ],
+  "result": {
+    "count": 9,
+    "id": "modular-metallurgy:steel_nugget"
+  }
+}

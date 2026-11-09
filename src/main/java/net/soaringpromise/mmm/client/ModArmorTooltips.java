@@ -27,7 +27,7 @@ public final class ModArmorTooltips {
                     Map.entry(ModArmorMaterials.LEAD_KEY, new SetTooltip("lead", 2, 1)),
                     Map.entry(EquipmentAssets.IRON, new SetTooltip("iron", 1, 0)),
                     Map.entry(ModArmorMaterials.SILVER_KEY, new SetTooltip("silver", 1, 0)),
-                    Map.entry(ModArmorMaterials.STEEL_KEY, new SetTooltip("steel", 1, 1)),
+                    Map.entry(ModArmorMaterials.STEEL_KEY, new SetTooltip("steel", 1, 2)),
                     Map.entry(EquipmentAssets.DIAMOND, new SetTooltip("diamond", 1, 1)),
                     Map.entry(EquipmentAssets.NETHERITE, new SetTooltip("netherite", 2, 1))
             );

@@ -148,6 +148,10 @@ public class ModItemsTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 ModArmor.LEAD_HELMET, ModArmor.LEAD_CHESTPLATE,
                 ModArmor.LEAD_LEGGINGS, ModArmor.LEAD_BOOTS,
                 ModArmor.LEAD_HORSE_ARMOR, ModArmor.LEAD_NAUTILUS_ARMOR);
+
+        valueLookupBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.SILVER_INGOT)
+                .add(ModItems.LEAD_INGOT);
     }
 
     private void addRecycling(TagKey<Item> tag, Item... items) {

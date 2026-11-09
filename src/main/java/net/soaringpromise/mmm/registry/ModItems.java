@@ -16,9 +16,11 @@ public final class ModItems {
     public static final Item RAW_SILVER = registerItem("raw_silver", Item::new);
     public static final Item RAW_LEAD = registerItem("raw_lead", Item::new);
 
-    public static final Item SILVER_INGOT = registerItem("silver_ingot", Item::new);
+    public static final Item SILVER_INGOT = registerItem("silver_ingot",
+            p -> new Item(p.trimMaterial(ModTrimMaterials.SILVER)));
     public static final Item STEEL_INGOT = registerItem("steel_ingot", Item::new);
-    public static final Item LEAD_INGOT = registerItem("lead_ingot", Item::new);
+    public static final Item LEAD_INGOT = registerItem("lead_ingot",
+            p -> new Item(p.trimMaterial(ModTrimMaterials.LEAD)));
 
     public static final Item SILVER_NUGGET = registerItem("silver_nugget", Item::new);
     public static final Item STEEL_NUGGET = registerItem("steel_nugget", Item::new);

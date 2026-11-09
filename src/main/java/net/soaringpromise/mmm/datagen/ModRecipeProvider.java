@@ -8,6 +8,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -48,6 +49,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         RecipeCategory.MISC, ModItems.LEAD_INGOT,
                         RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_BLOCK,
                         "lead_ingot_from_lead_block", "lead_ingot"
+                );
+
+                nineBlockStorageRecipesRecipesWithCustomUnpacking(
+                        RecipeCategory.MISC, ModItems.SILVER_NUGGET,
+                        RecipeCategory.MISC, ModItems.SILVER_INGOT,
+                        "silver_nugget_from_silver_ingot", "silver_nugget"
+                );
+
+                nineBlockStorageRecipesRecipesWithCustomUnpacking(
+                        RecipeCategory.MISC, ModItems.STEEL_NUGGET,
+                        RecipeCategory.MISC, ModItems.STEEL_INGOT,
+                        "steel_nugget_from_steel_ingot", "steel_nugget"
+                );
+
+                nineBlockStorageRecipesRecipesWithCustomUnpacking(
+                        RecipeCategory.MISC, ModItems.LEAD_NUGGET,
+                        RecipeCategory.MISC, ModItems.LEAD_INGOT,
+                        "lead_nugget_from_lead_ingot", "lead_nugget"
+                );
+
+                nineBlockStorageRecipesRecipesWithCustomUnpacking(
+                        RecipeCategory.MISC, ModItems.RAW_SILVER,
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_SILVER_BLOCK,
+                        "raw_silver_from_raw_silver_block", "raw_silver"
+                );
+
+                nineBlockStorageRecipesRecipesWithCustomUnpacking(
+                        RecipeCategory.MISC, ModItems.RAW_LEAD,
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_LEAD_BLOCK,
+                        "raw_lead_from_raw_lead_block", "raw_lead"
                 );
 
                 oreSmelting(
@@ -381,6 +412,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .save(exporter);
             }
         };
+    }
+
+    @Override
+    protected @NonNull Identifier getRecipeIdentifier(Identifier identifier) {
+        return identifier.getNamespace().equals("minecraft")
+                ? identifier
+                : super.getRecipeIdentifier(identifier);
     }
 
     @Override

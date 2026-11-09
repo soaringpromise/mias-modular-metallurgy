@@ -1,40 +1,139 @@
 {
+  "modmenu.descriptionTranslation.modular-metallurgy": "Un mod Vanilla+ modular para Minecraft que amplía la metalurgia con nuevos metales, equipamiento, efectos de conjuntos de armadura y mejoras de calidad de vida.",
+  "modmenu.summaryTranslation.modular-metallurgy": "Nuevos metales, equipamiento, bonificaciones de armadura y mejoras de metalurgia.",
+
+  "modular-metallurgy.config": "Mia's Modular Metallurgy",
+
+  "modular-metallurgy.config.setBonuses": "Efectos de conjuntos de armadura",
+  "modular-metallurgy.config.silverUndeadEffectiveness": "Efectividad de la plata",
+
+  "modular-metallurgy.config.leatherSetBonus": "Efectos de la armadura de cuero",
+  "modular-metallurgy.config.leatherSetBonus.desc": "Activa las bonificaciones de exploración otorgadas al llevar un conjunto completo de armadura de cuero.",
+
+  "modular-metallurgy.config.goldSetBonus": "Efectos de la armadura de oro",
+  "modular-metallurgy.config.goldSetBonus.desc": "Activa el aumento de velocidad de ataque otorgado al llevar un conjunto completo de armadura de oro.",
+
+  "modular-metallurgy.config.copperSetBonus": "Efectos de la armadura de cobre",
+  "modular-metallurgy.config.copperSetBonus.desc": "Activa las bonificaciones de movimiento y minado, además de las vulnerabilidades a los rayos y al retroceso, de la armadura de cobre completa.",
+
+  "modular-metallurgy.config.chainmailSetBonus": "Efectos de la armadura de cota de malla",
+  "modular-metallurgy.config.chainmailSetBonus.desc": "Activa la resistencia al daño cuerpo a cuerpo y la vulnerabilidad a los proyectiles de la armadura de cota de malla completa.",
+
+  "modular-metallurgy.config.leadSetBonus": "Efectos de la armadura de plomo",
+  "modular-metallurgy.config.leadSetBonus.desc": "Activa la protección contra explosiones y la penalización de salud máxima de la armadura de plomo completa.",
+
+  "modular-metallurgy.config.ironSetBonus": "Efectos de la armadura de hierro",
+  "modular-metallurgy.config.ironSetBonus.desc": "Activa la resistencia adicional al retroceso otorgada al llevar un conjunto completo de armadura de hierro.",
+
+  "modular-metallurgy.config.silverSetBonus": "Efectos de la armadura de plata",
+  "modular-metallurgy.config.silverSetBonus.desc": "Activa la reducción del daño recibido de enemigos no muertos al llevar un conjunto completo de armadura de plata.",
+
+  "modular-metallurgy.config.steelSetBonus": "Efectos de la armadura de acero",
+  "modular-metallurgy.config.steelSetBonus.desc": "Activa el aumento de salud máxima y las penalizaciones de movimiento de la armadura de acero completa.",
+
+  "modular-metallurgy.config.diamondSetBonus": "Efectos de la armadura de diamante",
+  "modular-metallurgy.config.diamondSetBonus.desc": "Activa la protección innata contra proyectiles y la vulnerabilidad a las explosiones de la armadura de diamante completa.",
+
+  "modular-metallurgy.config.netheriteSetBonus": "Efectos de la armadura de netherita",
+  "modular-metallurgy.config.netheriteSetBonus.desc": "Activa la protección innata contra el fuego, la reducción de la duración al quemarse y el aumento de gravedad de la armadura de netherita completa.",
+
+  "modular-metallurgy.config.silverUndeadDamageBonus": "Daño de plata contra no muertos",
+  "modular-metallurgy.config.silverUndeadDamageBonus.desc": "Permite que las herramientas y armas de plata inflijan el doble de daño a los enemigos no muertos.",
+
   "tab.modular-metallurgy.silver_items": "Metalurgia Modular: Plata",
   "tab.modular-metallurgy.steel_items": "Metalurgia Modular: Acero",
   "tab.modular-metallurgy.lead_items": "Metalurgia Modular: Plomo",
 
-  "tooltip.modular-metallurgy.armor.full_set": "Efectos del conjunto completo",
+  "item.modular-metallurgy.raw_silver": "Plata en bruto",
+  "item.modular-metallurgy.raw_lead": "Plomo en bruto",
+  "item.modular-metallurgy.silver_ingot": "Lingote de plata",
+  "item.modular-metallurgy.steel_ingot": "Lingote de acero",
+  "item.modular-metallurgy.lead_ingot": "Lingote de plomo",
+  "item.modular-metallurgy.silver_nugget": "Pepita de plata",
+  "item.modular-metallurgy.steel_nugget": "Pepita de acero",
+  "item.modular-metallurgy.lead_nugget": "Pepita de plomo",
+  "item.modular-metallurgy.silver_arrow": "Flecha de plata",
+  "item.modular-metallurgy.steel_blend": "Mezcla de acero",
 
+  "block.modular-metallurgy.silver_block": "Bloque de plata",
+  "block.modular-metallurgy.steel_block": "Bloque de acero",
+  "block.modular-metallurgy.lead_block": "Bloque de plomo",
+  "block.modular-metallurgy.raw_silver_block": "Bloque de plata en bruto",
+  "block.modular-metallurgy.raw_lead_block": "Bloque de plomo en bruto",
+  "block.modular-metallurgy.silver_ore": "Mineral de plata",
+  "block.modular-metallurgy.deepslate_silver_ore": "Mineral de plata de pizarra profunda",
+  "block.modular-metallurgy.lead_ore": "Mineral de plomo",
+  "block.modular-metallurgy.deepslate_lead_ore": "Mineral de plomo de pizarra profunda",
+
+  "item.modular-metallurgy.silver_sword": "Espada de plata",
+  "item.modular-metallurgy.silver_pickaxe": "Pico de plata",
+  "item.modular-metallurgy.silver_shovel": "Pala de plata",
+  "item.modular-metallurgy.silver_axe": "Hacha de plata",
+  "item.modular-metallurgy.silver_hoe": "Azada de plata",
+  "item.modular-metallurgy.silver_spear": "Lanza de plata",
+
+  "item.modular-metallurgy.steel_sword": "Espada de acero",
+  "item.modular-metallurgy.steel_pickaxe": "Pico de acero",
+  "item.modular-metallurgy.steel_shovel": "Pala de acero",
+  "item.modular-metallurgy.steel_axe": "Hacha de acero",
+  "item.modular-metallurgy.steel_hoe": "Azada de acero",
+  "item.modular-metallurgy.steel_spear": "Lanza de acero",
+  "item.modular-metallurgy.steel_fishing_rod": "Caña de pescar de acero",
+  "item.modular-metallurgy.steel_shears": "Tijeras de acero",
+
+  "item.modular-metallurgy.lead_sword": "Espada de plomo",
+  "item.modular-metallurgy.lead_pickaxe": "Pico de plomo",
+  "item.modular-metallurgy.lead_shovel": "Pala de plomo",
+  "item.modular-metallurgy.lead_axe": "Hacha de plomo",
+  "item.modular-metallurgy.lead_hoe": "Azada de plomo",
+  "item.modular-metallurgy.lead_spear": "Lanza de plomo",
+  "item.modular-metallurgy.silver_helmet": "Casco de plata",
+
+  "item.modular-metallurgy.silver_chestplate": "Pechera de plata",
+  "item.modular-metallurgy.silver_leggings": "Grebas de plata",
+  "item.modular-metallurgy.silver_boots": "Botas de plata",
+  "item.modular-metallurgy.silver_horse_armor": "Armadura para caballo de plata",
+  "item.modular-metallurgy.silver_nautilus_armor": "Armadura para nautilo de plata",
+
+  "item.modular-metallurgy.steel_helmet": "Casco de acero",
+  "item.modular-metallurgy.steel_chestplate": "Pechera de acero",
+  "item.modular-metallurgy.steel_leggings": "Grebas de acero",
+  "item.modular-metallurgy.steel_boots": "Botas de acero",
+  "item.modular-metallurgy.steel_horse_armor": "Armadura para caballo de acero",
+  "item.modular-metallurgy.steel_nautilus_armor": "Armadura para nautilo de acero",
+
+  "item.modular-metallurgy.lead_helmet": "Casco de plomo",
+  "item.modular-metallurgy.lead_chestplate": "Pechera de plomo",
+  "item.modular-metallurgy.lead_leggings": "Grebas de plomo",
+  "item.modular-metallurgy.lead_boots": "Botas de plomo",
+  "item.modular-metallurgy.lead_horse_armor": "Armadura para caballo de plomo",
+  "item.modular-metallurgy.lead_nautilus_armor": "Armadura para nautilo de plomo",
+
+  "tooltip.modular-metallurgy.armor.full_set": "Efectos del conjunto completo",
   "tooltip.modular-metallurgy.armor.leather.bonus.1": "+12% de fuerza de salto",
   "tooltip.modular-metallurgy.armor.leather.bonus.2": "-25% de daño por caída",
-
   "tooltip.modular-metallurgy.armor.gold.bonus.1": "+20% de velocidad de ataque",
-
   "tooltip.modular-metallurgy.armor.copper.bonus.1": "+12% de velocidad de movimiento",
   "tooltip.modular-metallurgy.armor.copper.bonus.2": "+20% de velocidad de minado",
   "tooltip.modular-metallurgy.armor.copper.drawback.1": "Daño por rayos x4",
   "tooltip.modular-metallurgy.armor.copper.drawback.2": "+25% de retroceso recibido",
-
   "tooltip.modular-metallurgy.armor.chainmail.bonus.1": "-15% de daño cuerpo a cuerpo recibido",
   "tooltip.modular-metallurgy.armor.chainmail.drawback.1": "+10% de daño por proyectiles recibido",
-
   "tooltip.modular-metallurgy.armor.lead.bonus.1": "-16% de daño por explosiones recibido",
   "tooltip.modular-metallurgy.armor.lead.bonus.2": "+30% de resistencia al retroceso por explosiones",
   "tooltip.modular-metallurgy.armor.lead.drawback.1": "-4 puntos de salud máxima",
-
   "tooltip.modular-metallurgy.armor.iron.bonus.1": "+20% de resistencia al retroceso",
-
   "tooltip.modular-metallurgy.armor.silver.bonus.1": "-25% de daño recibido de no muertos",
-
   "tooltip.modular-metallurgy.armor.steel.bonus.1": "+4 puntos de salud máxima",
   "tooltip.modular-metallurgy.armor.steel.drawback.1": "-10% de velocidad de movimiento",
-
+  "tooltip.modular-metallurgy.armor.steel.drawback.2": "-6% de fuerza de salto",
   "tooltip.modular-metallurgy.armor.diamond.bonus.1": "Protección contra proyectiles II innata",
   "tooltip.modular-metallurgy.armor.diamond.drawback.1": "+15% de daño por explosiones recibido",
-
   "tooltip.modular-metallurgy.armor.netherite.bonus.1": "Protección contra el fuego II innata",
   "tooltip.modular-metallurgy.armor.netherite.bonus.2": "-30% de duración al quemarse",
   "tooltip.modular-metallurgy.armor.netherite.drawback.1": "+20% de gravedad",
+  "tooltip.modular-metallurgy.silver.undead_damage": "Inflige el doble de daño a los no muertos",
 
-  "tooltip.modular-metallurgy.silver.undead_damage": "Inflige el doble de daño a los no muertos"
+  "trim_material.modular-metallurgy.silver": "Plata",
+  "trim_material.modular-metallurgy.lead": "Plomo"
 }
